@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Création Compte</title>
+  </head>
+  <body>
+  <form class="form_1" method="POST" action="formulaire.php">
+    <div>
+    <label for="nom_compte">Nom de Compte</label>
+    <input type="text" name="nom_compte" value=""  maxlength="15">
+    </div>
+    <div >
+      <p>Sélectionner le type de compte : </p>
+        <input type="radio" name="type_compte" value="courant">
+        <label for="type_compte">Compte courant</label><br>
+        <input type="radio" name="type_compte" value="epargne">
+        <label for="type_compte">Epargne </label><br>
+        <input type="radio" name="type_compte" value="joint">
+        <label for="type_compte">Compte joint</label><br><br>
+    </div>
+
+    <label for="nom_compte">Montant du compte</label>
+    <input type="number" name="amount" value="" maxlength="11">
+
+    <select name="devise_compte">
+        <option value="eur">EUR</option>
+        <option value="usd">USD</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" name="send" value="Submit">
+  </form>
+  <a href="acceuil.php" > <input type="button" name="" value="Acceuil"> </a>
+
+  </body>
+</html>
